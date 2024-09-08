@@ -169,6 +169,7 @@ img.logo {
         gap: 7vw;
     }
     .poster{
+        flex-direction: column;
         width: 98%;
         max-height: 50%;
     }
