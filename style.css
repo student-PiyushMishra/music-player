@@ -101,6 +101,7 @@ img.logo {
     width: 100vw;
     padding: 2rem 5rem;
     gap: 10vw;
+    padding-bottom: 5rem;
 }
 .poster{
     height: 100%;
