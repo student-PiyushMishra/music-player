@@ -162,12 +162,16 @@ img.logo {
         padding: 0vw 1vw;
         width: 96vw;
         flex-direction: column;
+        height:100%;
+        padding: 1vw;
+        padding-bottom: 8vh;
     }
     .poster{
         width: 98%;
+        max-height: 100%;
     }
     .songs{
-        height: 130%;
+        height: 80%;
         width: 100%;
         overflow-x: hidden;
         padding: 1vw;
@@ -188,7 +192,7 @@ img.logo {
     .top{
         max-width: 96vw;
         flex-direction: column;
-        padding: 0vw;
+        height: 87vh;
     }
     .play-ctrl{
         max-width: 96vw;
