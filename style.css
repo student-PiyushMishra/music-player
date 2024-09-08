@@ -34,7 +34,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 1vw 0vw;
-    gap: 1vw;
+    gap: 1vh;
     background-color: #000000;
 }
 
@@ -157,6 +157,7 @@ img.logo {
     #main{
         padding: 3vw 0vw;
         justify-content: space-between;
+        gap: 1vh;
     }
     .playlist{
         padding: 0vw 1vw;
@@ -193,9 +194,10 @@ img.logo {
     .top{
         max-width: 96vw;
         flex-direction: column;
-        height: 87vh;
+        height: 88vh;
     }
     .play-ctrl{
+        height: 11vh;
         max-width: 96vw;
     }
     .play-ctrl>.icons>i{
