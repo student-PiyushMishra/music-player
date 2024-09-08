@@ -195,7 +195,7 @@ img.logo {
     .top{
         max-width: 96vw;
         flex-direction: column;
-        height: 88vh;
+        height: 85vh;
     }
     .play-ctrl{
         height: 11vh;
