@@ -73,7 +73,7 @@ body {
     background-color: rgba(0, 0, 0, 0.44);
 }
 .top>nav {
-    height: 4vw;
+    height: 6vw;
     width: 100%;
     background-color: #1f1f1f;
     padding: 1vw 3vw;
@@ -92,7 +92,7 @@ img.logo {
     font-weight: 100;
     color: #2ac358;
     font-family: 'Protest Guerrilla', sans-serif;
-    margin-top: 1.5vw;
+    margin: 1.5vw;
 }
 .playlist{
     display: flex;
@@ -111,6 +111,7 @@ img.logo {
     justify-content: center;
     gap:1vw;
     color: white;
+    margin: auto;
 }
 .poster>img{
     height:100%;
@@ -157,21 +158,25 @@ img.logo {
         justify-content: space-between;
     }
     .playlist{
+        padding: 0vw 1vw;
+        width: 96vw;
         flex-direction: column;
     }
     .poster{
-        width: 100%;
+        width: 98%;
     }
     .songs{
+        height: 130%;
         width: 100%;
         overflow-x: hidden;
+        padding: 1vw;
     }
     .song{
         width: 100%;
         font-size: 1rem;
     }
     .top>nav>p{
-        font-size:xx-small;
+        font-size:3.4vw;
     }
     img.logo{
         max-height: 140%;
@@ -182,6 +187,7 @@ img.logo {
     .top{
         max-width: 96vw;
         flex-direction: column;
+        padding: 0vw;
     }
     .play-ctrl{
         max-width: 96vw;

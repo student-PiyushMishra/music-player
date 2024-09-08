@@ -21,6 +21,11 @@ let songs = [
     {songName:"Brown Rang",songImg:"Assets/images/brown_rang.jpg",songUrl:"Assets/songs/brown_rang.mp3"},
     {songName:"Desi Kalakaar",songImg:"Assets/images/desi_kalakaar.jpg",songUrl:"Assets/songs/desi_kalakaar.mp3"},
     {songName:"Love Dose",songImg:"Assets/images/love_dose.jpg",songUrl:"Assets/songs/love_dose.mp3"},
+    {songName:"Heer Aasmani",songImg:"Assets/images/heer_aasmani.jpg",songUrl:"Assets/songs/heer_aasmani.mp3"},
+    {songName:"Made In India",songImg:"Assets/images/made_in_india.jpg",songUrl:"Assets/songs/made_in_india.mp3"},
+    {songName:"Sareena Safari",songImg:"Assets/images/sareena_safari.jpg",songUrl:"Assets/songs/sareena_safari.mp3"},
+    {songName:"Sher Khul Gaye",songImg:"Assets/images/sher_khul_gaye.jpg",songUrl:"Assets/songs/sher_khul_gaye.mp3"},
+    {songName:"One Love",songImg:"Assets/images/one_love.jpg",songUrl:"Assets/songs/one_love.mp3"},
 ]
 
 selectedSong = 0
