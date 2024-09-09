@@ -14,7 +14,7 @@ icons.forEach(elem => {
 let songs = [
     {songName:"One Bottle Down",songImg:"Assets/images/one_bottle_down.jpg",songUrl:"Assets/songs/one_bottle_down.mp3"},
     {songName:"Chogada Tara",songImg:"Assets/images/chogada_tara.jpg",songUrl:"Assets/songs/chogada_tara.mp3"},
-    {songName:"Party With The BhootNath",songImg:"Assets/images/party_with_bhoothnath.jpg",songUrl:"Assets/songs/party_with_bhoothnath.mp3"},
+    {songName:"Party With BhootNath",songImg:"Assets/images/party_with_bhoothnath.jpg",songUrl:"Assets/songs/party_with_bhoothnath.mp3"},
     {songName:"Arjan Vailly",songImg:"Assets/images/arjan_vailly.jpg",songUrl:"Assets/songs/arjan_vailly.mp3"},
     {songName:"Ram Siya Ram",songImg:"Assets/images/ram_siya_ram.jpg",songUrl:"Assets/songs/ram_siya_ram.mp3"},
     {songName:"Main Roya",songImg:"Assets/images/main_roya.jpg",songUrl:"Assets/songs/main_roya.mp3"},
@@ -36,7 +36,9 @@ function showPlaylist(array){
     let clutter = ``
     let id = 0;
     array.forEach(elem => {
-        clutter += `<div class="song" id="${id}"><img src="${elem.songImg}">${elem.songName}</div>`
+        let downloadName;
+        downloadName = elem.songName.toLowerCase().split(" ").join("_");
+        clutter += `<div class="song"><div class="song_dets" id="${id}"><img src="${elem.songImg}">${elem.songName}</div><a href="${elem.songUrl}" download="${downloadName}.mp3"><div class="download"><i class="ri-download-cloud-fill"></i></div></a></div>`
         id++;
     })
     document.querySelector(".songs").innerHTML = clutter;
@@ -50,6 +52,14 @@ let play_btns = document.querySelector(".play-ctrl>.icons");
 function playAudio(){
     let flag = 0;
     play_btns.addEventListener("click",function(dets){
+        if(dets.target.id == '1'){
+            if(flag == 0){
+                audio.play();
+            }
+            else if(flag == 1){
+                audio.pause();
+            }
+        }
         if(dets.target.id == '1'){
             if(flag == 0){
                 poster.innerHTML = `<img src="${songs[selectedSong].songImg}">`
@@ -86,6 +96,7 @@ function playAudio(){
         selectedSong = dets.target.id
         poster.innerHTML = `<img src="${songs[selectedSong].songImg}">`
         audio.src = (songs[selectedSong].songUrl)
+        flag = 1;
         audio.play()
     })
 }
